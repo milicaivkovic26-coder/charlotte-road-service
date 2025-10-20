@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charlotte Jump Start — Roadside Assistance</title>
+  <meta name="description" content="Fast, affordable roadside assistance in Charlotte: car & semi jump starts, fuel delivery, spare tire changes. No extra charge inside the I‑485 loop." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --muted:#94a3b8;
+      --text:#e5e7eb;
+      --accent:#22d3ee;
+      --accent2:#34d399;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:800;color:#0a0a0a}
+    .brand h1{font-size:18px;line-height:1.2;margin:0}
+    .cta{display:inline-block;background:var(--accent);color:#05222a;font-weight:800;padding:12px 18px;border-radius:12px;box-shadow:0 6px 20px rgba(34,211,238,.25)}
+    .cta:hover{transform:translateY(-1px)}
+
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;padding:28px 0}
+    .hero .card{background:linear-gradient(145deg,#0b1228 0%, #0a1022 100%);border:1px solid rgba(148,163,184,.15);border-radius:20px;padding:24px}
+    h2{font-size:28px;margin:0 0 8px}
+    p{margin:0 0 12px;color:var(--muted)}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .badge{font-size:12px;border:1px solid rgba(148,163,184,.25);padding:6px 10px;border-radius:999px;color:#cbd5e1}
+
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px}
+    .service{background:var(--card);border:1px solid rgba(148,163,184,.15);border-radius:18px;padding:18px}
+    .service h3{margin:0 0 6px;font-size:18px}
+    .price{font-weight:800;font-size:22px;color:var(--accent)}
+    .note{margin-top:14px;font-size:14px;color:#cbd5e1}
+
+    .area{margin-top:24px;background:#0b132a;border:1px dashed rgba(34,211,238,.35);border-radius:16px;padding:16px}
+
+    footer{margin-top:36px;padding:16px 0;border-top:1px solid rgba(148,163,184,.15);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+    .foot-col{color:var(--muted);font-size:14px}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 560px){
+      .services{grid-template-columns:1fr}
+      .cta{width:100%;text-align:center}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoadsideAssistance",
+    "name": "Charlotte Jump Start",
+    "areaServed": "Charlotte, NC (I-485 loop)",
+    "priceRange": "$$",
+    "telephone": "+1-862-257-0081",
+    "url": "https://example.com",
+    "openingHours": "Mo-Su 09:00-23:59",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Charlotte",
+      "addressRegion": "NC",
+      "postalCode": "",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">CS</div>
+        <div>
+          <h1>Charlotte Jump Start</h1>
+          <div style="font-size:13px;color:var(--muted)">Roadside Assistance • 9am - Closed</div>
+        </div>
+      </div>
+      <a class="cta" href="tel:+18622570081">Call Now: (862) 257‑0081</a>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Fast jump starts & roadside help in Charlotte</h2>
+        <p>We come to you anywhere inside the I‑485 loop. Transparent pricing, no surprises.</p>
+        <div class="badges">
+          <span class="badge">Arrival ETA ~30–60 min*</span>
+          <span class="badge">Card & cash accepted</span>
+          <span class="badge">Bilingual: EN / SR</span>
+        </div>
+        <p class="note" style="margin-top:10px;font-size:12px">*Traffic and call volume can affect ETA.</p>
+      </div>
+      <div class="card">
+        <div class="services">
+          <div class="service">
+            <h3>Car Jump Start</h3>
+            <div class="price">$70</div>
+          </div>
+          <div class="service">
+            <h3>Semi Jump Start</h3>
+            <div class="price">$150</div>
+          </div>
+          <div class="service">
+            <h3>Fuel Delivery</h3>
+            <div class="price">$60</div>
+          </div>
+          <div class="service">
+            <h3>Spare Tire Change</h3>
+            <div class="price">$100</div>
+          </div>
+        </div>
+        <div class="area">
+          <strong>Service Area & Fees</strong>
+          <p class="note">No extra charge inside the I‑485 loop. Outside the loop, <strong>$3 per mile</strong> from the loop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="background:#0a1226;border:1px solid rgba(148,163,184,.15);border-radius:18px;padding:18px">
+      <h2 style="margin-top:0">Kontakt / Contact</h2>
+      <p>📞 <a href="tel:+18622570081">(862) 257‑0081</a> &nbsp;|&nbsp; 📧 <a href="mailto:info@example.com">info@example.com</a></p>
+      <p>Hours: 9am – Closed &nbsp;•&nbsp; Charlotte, NC</p>
+    </section>
+
+    <footer>
+      <div class="foot-col">© <span id="year"></span> Charlotte Jump Start. All rights reserved.</div>
+      <div class="foot-col">EN • SR: Treba mi simple website — Pomoć na putu u Charlotte.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
